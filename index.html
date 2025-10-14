@@ -4,150 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coder Cafe</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #f8ede3;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #333;
-        }
-
-        .top-bar {
-            height: 60px;
-            background-color: #f8ede3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 20px;
-            border-bottom: 1px solid #E5E5E5;
-        }
-
-        .top-bar img {
-            max-height: 40px;
-            width: auto;
-        }
-
-        .menu-bar {
-            height: 40px;
-            background-color: #f8ede3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 1px solid #E5E5E5;
-        }
-
-        .menu-bar nav {
-            display: flex;
-            gap: 30px;
-        }
-
-        .menu-bar a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            padding: 8px 0;
-            position: relative;
-        }
-
-        .menu-bar a.active {
-            border-bottom: 2px solid #333;
-        }
-
-        .menu-bar a:hover {
-            color: #666;
-        }
-
-        .hero-section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            gap: 60px;
-        }
-
-        .hero-left {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .hero-left img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        .hero-left h2 {
-            font-size: 24px;
-            font-weight: 600;
-            color: #333;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .hero-right {
-            flex: 1;
-            padding-left: 20px;
-        }
-
-        .hero-right h1 {
-            font-size: 36px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero-right p {
-            font-size: 18px;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .hero-meta {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            color: #888;
-        }
-
-        .hero-meta .calendar-icon {
-            width: 16px;
-            height: 16px;
-            background-color: #888;
-            border-radius: 2px;
-        }
-
-        @media (max-width: 768px) {
-            .hero-section {
-                flex-direction: column;
-                gap: 40px;
-            }
-            
-            .hero-right {
-                padding-left: 0;
-                text-align: center;
-            }
-            
-            .hero-right h1 {
-                font-size: 28px;
-            }
-            
-            .menu-bar nav {
-                gap: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -171,6 +28,51 @@
         <div class="hero-right">
             <h1>Welcome to The Coder Cafe!</h1>
             <p>Missing direction in your tech career? At The Coder Cafe, we serve timeless concepts with your coffee to help you master the fundamentals.</p>
+        </div>
+    </div>
+
+    <!-- What You'll Learn Section -->
+    <div class="what-youll-learn">
+        <div class="what-youll-learn-container">
+            <h2>What You'll Learn</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <span class="icon">🧠</span>
+                    <h3>Programming Fundamentals</h3>
+                    <p>Master the core concepts that every developer needs to know, from data structures to algorithms.</p>
+                </div>
+                <div class="card">
+                    <span class="icon">🏗️</span>
+                    <h3>System Design</h3>
+                    <p>Learn how to design scalable systems and understand complex architectures.</p>
+                </div>
+                <div class="card">
+                    <span class="icon">⚡</span>
+                    <h3>Best Practices</h3>
+                    <p>Discover industry best practices for writing clean, maintainable code.</p>
+                </div>
+                <div class="card">
+                    <span class="icon">🚀</span>
+                    <h3>Career Growth</h3>
+                    <p>Get insights on advancing your career in software engineering.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe Section -->
+    <div class="subscribe-section">
+        <div class="subscribe-container">
+            <iframe 
+                src="https://www.thecoder.cafe/embed" 
+                width="480" 
+                height="320" 
+                style="border:1px solid #EEE; background:white;" 
+                frameborder="0" 
+                scrolling="no"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </div>
 </body>

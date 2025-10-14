@@ -1,0 +1,16 @@
+{
+  "name": "thecodercafe-website",
+  "version": "1.0.0",
+  "description": "The Coder Cafe website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["website", "thecodercafe"],
+  "author": "",
+  "license": "MIT"
+}

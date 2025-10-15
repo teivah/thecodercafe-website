@@ -11,17 +11,17 @@ body {
 }
 
 .top-bar {
-    height: 60px;
+    height: 90px;
     background-color: #f8ede3;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 25px 20px;
     border-bottom: 1px solid #E5E5E5;
 }
 
 .top-bar img {
-    max-height: 40px;
+    max-height: 50px;
     width: auto;
 }
 
@@ -73,10 +73,12 @@ body {
 
 .hero-content h1 {
     font-size: 36px;
-    font-weight: 700;
-    color: #333;
+    font-weight: 400;
+    color: #2c3e50;
     margin-bottom: 40px;
-    line-height: 1.2;
+    line-height: 1.3;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.2px;
 }
 
 .hero-content img {

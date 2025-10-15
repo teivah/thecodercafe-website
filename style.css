@@ -179,6 +179,12 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card .icon {
@@ -196,8 +202,31 @@ body {
 
 .card p {
     font-size: 16px;
-    color: #555;
+    color: #333;
     line-height: 1.5;
+}
+
+.card .post-example-label {
+    font-size: 14px;
+    color: #888 !important;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.post-example-link {
+    display: block;
+    font-size: 16px;
+    color: #8d493a;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.post-example-link:hover {
+    color: #6a352b;
+    text-decoration: underline;
 }
 
 .about-section {

@@ -144,6 +144,26 @@ body {
     color: #555;
     line-height: 1.6;
     text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #8d493a;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 60px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(141, 73, 58, 0.3);
+}
+
+.hero-btn:hover {
+    background-color: #6a352b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(141, 73, 58, 0.4);
 }
 
 .hero-meta {
@@ -343,6 +363,8 @@ body {
     min-width: 280px;
     max-width: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .recommendation-item:hover {
@@ -478,6 +500,9 @@ body {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .section-item:hover {
@@ -508,28 +533,6 @@ body {
 
 .subscribe-container {
     text-align: center;
-}
-
-.subscribe-container h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 0;
-}
-
-.embed-section {
-    background-color: white;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.embed-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media (max-width: 1024px) {

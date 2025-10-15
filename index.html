@@ -21,7 +21,7 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="hero-section">
+    <div class="hero-section fade-in">
         <div class="hero-content">
             <h1>Welcome to The Coder Cafe!</h1>
             <img src="logo.png" alt="The Coder Cafe Logo">
@@ -30,7 +30,7 @@
     </div>
 
     <!-- Author Section -->
-    <div class="author-section">
+    <div class="author-section scale-in">
         <div class="author-container">
             <h2>Author</h2>
             <img src="teivah.png" alt="Teiva Harsanyi" class="author-photo">
@@ -39,36 +39,36 @@
     </div>
 
     <!-- Concepts Section -->
-    <div class="what-youll-learn">
+    <div class="what-youll-learn fade-in">
         <div class="what-youll-learn-container">
             <h2>Concepts</h2>
             <div class="cards-grid">
-                <div class="card">
+                <div class="card fade-in">
                     <span class="icon">💻</span>
                     <h3>Programming</h3>
                     <p>Algorithms, data structures, code health, concurrency, and functional programming concepts.</p>
                 </div>
-                <div class="card">
+                <div class="card fade-in">
                     <span class="icon">🧪</span>
                     <h3>Testing</h3>
                     <p>Unit tests, TDD, property-based testing, and test-driven development practices.</p>
                 </div>
-                <div class="card">
+                <div class="card fade-in">
                     <span class="icon">🌐</span>
                     <h3>Distributed Systems</h3>
                     <p>Databases, performance, system design, and working with complex distributed architectures.</p>
                 </div>
-                <div class="card">
+                <div class="card fade-in">
                     <span class="icon">🛡️</span>
                     <h3>Reliability</h3>
                     <p>Analysis, fault tolerance, graceful degradation, and building resilient systems.</p>
                 </div>
-                <div class="card">
+                <div class="card fade-in">
                     <span class="icon">⚙️</span>
                     <h3>Systems</h3>
                     <p>Computer architecture, Linux systems, and low-level system understanding.</p>
                 </div>
-                <div class="card">
+                <div class="card fade-in">
                     <span class="icon">🧠</span>
                     <h3>Beyond the Code</h3>
                     <p>Communication, cognitive biases, critical thinking, and mindset for software engineers.</p>
@@ -78,14 +78,14 @@
     </div>
 
     <!-- Subscribe Section -->
-    <div class="subscribe-section">
+    <div class="subscribe-section fade-in">
         <div class="subscribe-container">
             <h2>Subscribe</h2>
         </div>
     </div>
 
     <!-- Embed Section -->
-    <div class="embed-section">
+    <div class="embed-section scale-in">
         <div class="embed-container">
             <iframe 
                 src="https://www.thecoder.cafe/embed" 
@@ -99,5 +99,37 @@
             </iframe>
         </div>
     </div>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add staggered delay for cards
+                    if (entry.target.classList.contains('card')) {
+                        const cards = document.querySelectorAll('.card');
+                        const cardIndex = Array.from(cards).indexOf(entry.target);
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, cardIndex * 100);
+                    } else {
+                        entry.target.classList.add('visible');
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>

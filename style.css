@@ -659,30 +659,42 @@ h2 {
     .header-content {
         padding: 15px 20px;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
     
     .header-logo {
-        max-height: 35px;
+        max-height: 40px;
     }
     
     .nav-menu {
-        gap: 15px;
+        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
     
     .nav-link {
-        font-size: 14px;
+        font-size: 15px;
     }
     
     .hero-section {
-        flex-direction: column;
-        gap: 40px;
+        padding: 40px 20px;
     }
     
     .hero-content h2 {
-        font-size: 32px;
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+    
+    .hero-btn, .subscribe-btn {
+        font-size: 16px;
+        padding: 14px 40px;
+    }
+    
+    h2 {
+        font-size: 28px !important;
     }
     
     .sections-grid {
@@ -692,5 +704,32 @@ h2 {
     
     .cards-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .card {
+        padding: 25px;
+    }
+    
+    .recommendation-items {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .recommendation-item {
+        max-width: 100%;
+    }
+    
+    .author-photo {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .social-link {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonial-img {
+        width: 100%;
     }
 }

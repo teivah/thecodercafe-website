@@ -656,15 +656,12 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    body {
-        overflow-x: clip;
-    }
-    
     .header-content {
         padding: 15px 20px;
         flex-direction: column;
         gap: 15px;
         width: 100%;
+        box-sizing: border-box;
     }
     
     .header-logo {

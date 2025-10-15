@@ -487,8 +487,56 @@ h2 {
     font-size: 16px;
     color: #555;
     line-height: 1.5;
-    font-style: italic;
     text-align: center;
+}
+
+.author-link {
+    color: #8d493a;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #8d493a;
+    transition: color 0.3s ease;
+}
+
+.author-link:hover {
+    color: #6a352b;
+    border-bottom-color: #6a352b;
+}
+
+.author-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid #e5d5c3;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 44px;
+    height: 44px;
+}
+
+.social-link:hover {
+    background-color: #5B9BD5;
+    color: white;
+    border-color: #5B9BD5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(91, 155, 213, 0.3);
+}
+
+.social-link svg {
+    width: 18px;
+    height: 18px;
 }
 
 .sections-section {

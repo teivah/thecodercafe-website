@@ -616,7 +616,10 @@ h2 {
 }
 
 .subscribe-section {
-    background-color: #f8ede3;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -630,6 +633,25 @@ h2 {
 .subscribe-container h2 {
     font-size: 38px;
     margin-bottom: 0;
+}
+
+.subscribe-btn {
+    display: inline-block;
+    background-color: #8d493a;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 60px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(141, 73, 58, 0.3);
+}
+
+.subscribe-btn:hover {
+    background-color: #6a352b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(141, 73, 58, 0.4);
 }
 
 @media (max-width: 1024px) {

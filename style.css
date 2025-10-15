@@ -288,7 +288,7 @@ h2 {
 }
 
 .about-container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -318,7 +318,7 @@ h2 {
 .stat-number {
     font-size: 48px;
     font-weight: 700;
-    color: #8d493a;
+    color: #8c7c73;
     margin-bottom: 10px;
     line-height: 1;
 }
@@ -390,7 +390,7 @@ h2 {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .recommendation-item {
@@ -401,9 +401,9 @@ h2 {
     display: flex;
     align-items: center;
     gap: 15px;
-    flex: 1;
-    min-width: 280px;
-    max-width: 400px;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
     color: inherit;

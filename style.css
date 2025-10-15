@@ -55,48 +55,61 @@ body {
     transform: scale(1);
 }
 
-.top-bar {
-    height: 90px;
-    background-color: #f8ede3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 20px;
+/* Header Styles */
+.header {
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid #e5d5c3;
 }
 
-.top-bar img {
-    max-height: 50px;
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-section {
+    flex-shrink: 0;
+}
+
+.header-logo {
+    max-height: 45px;
     width: auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.menu-bar {
-    height: 40px;
-    background-color: #f8ede3;
+.header-logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #E5E5E5;
+    gap: 35px;
 }
 
-.menu-bar nav {
-    display: flex;
-    gap: 30px;
-}
-
-.menu-bar a {
+.nav-link {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    font-size: 16px;
     padding: 8px 0;
     position: relative;
+    transition: color 0.3s ease;
 }
 
-.menu-bar a.active {
-    border-bottom: 2px solid #333;
-}
-
-.menu-bar a:hover {
+.nav-link:hover {
     color: #666;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #333;
 }
 
 .hero-section {
@@ -519,27 +532,48 @@ body {
     align-items: center;
 }
 
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    .header-content {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .header-logo {
+        max-height: 35px;
+    }
+    
+    .nav-menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+    
     .hero-section {
         flex-direction: column;
         gap: 40px;
     }
     
-    .hero-right {
-        padding-left: 0;
-        text-align: center;
-    }
-    
-    .hero-right h2 {
+    .hero-content h2 {
         font-size: 28px;
-    }
-    
-    .menu-bar nav {
-        gap: 20px;
     }
     
     .sections-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
     }
 }

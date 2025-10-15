@@ -287,6 +287,31 @@ body {
     gap: 40px;
 }
 
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #8d493a;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
 .achievement-badge {
     background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
     padding: 30px 40px;

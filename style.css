@@ -206,6 +206,152 @@ body {
     line-height: 1.5;
 }
 
+.about-section {
+    background-color: #f8ede3;
+    padding: 80px 20px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.achievement-badge {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f4d03f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.badge-icon {
+    font-size: 48px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.badge-text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.badge-text strong {
+    color: #d4af37;
+    font-weight: 700;
+}
+
+.badge-date {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.recommendations {
+    margin-top: 20px;
+}
+
+.recommendations-intro {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.recommendation-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recommendation-item {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.rec-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rec-content {
+    text-align: left;
+}
+
+.rec-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.rec-subtitle {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.kent-comment {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.kent-comment-img {
+    max-width: 100%;
+    width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
 .author-section {
     background-color: #f8ede3;
     padding: 60px 20px;

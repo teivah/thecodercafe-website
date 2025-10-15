@@ -339,13 +339,31 @@ body {
     line-height: 1.4;
 }
 
-.kent-comment {
-    margin-top: 40px;
+.testimonials-section {
+    background-color: #f8ede3;
+    padding: 80px 20px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.testimonials-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.testimonial-content {
     display: flex;
     justify-content: center;
 }
 
-.kent-comment-img {
+.testimonial-img {
     max-width: 100%;
     width: 900px;
     border-radius: 12px;
